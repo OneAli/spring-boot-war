@@ -26,4 +26,8 @@ public class Application extends SpringBootServletInitializer{
 		return "Spring boot war application!";
 	}
 
+	@RequestMapping("/hello")
+	public String hello() {
+		return "hello";
+	}
 }
